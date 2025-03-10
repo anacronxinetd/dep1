@@ -5,5 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Information
+        run: echo ${{vars.MY_VAR}}
         
   
