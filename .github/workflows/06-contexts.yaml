@@ -6,5 +6,9 @@ jobs:
     steps:
       - name: Display Information
         run: echo ${{vars.MY_VAR}}
-        
+
+      - name: Second job
+        env:
+          Bye: "Bye World"
+        run: echo ${{ vars.Bye}}
   
